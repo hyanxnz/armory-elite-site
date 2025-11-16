@@ -388,7 +388,6 @@ function generateProducts() {
   <div class="product-footer">
     <div class="product-price">
       ${formatCurrency(product.price)}
-      <small>Valor ilustrativo</small>
     </div>
         <button type="button" class="btn-add-cart" data-add-id="${product.id}">
     <i class="ri-shopping-cart-line"></i>

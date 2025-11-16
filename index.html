@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Armory Elite - Armas, Munições e Equipamentos Táticos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Loja especializada em armas de fogo, munições e equipamentos táticos, com foco em segurança, legalidade e responsabilidade." />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark-theme">
+    <div class="page">
+        <header class="header">
+            <div class="header-inner">
+                <div class="brand">
+                    <img src="fotos/logo.png" alt="JR logo" class="brand-logo">
+                    <div class="brand-text">
+                        <div class="brand-name">Armory Elite</div>
+                        <div class="brand-tagline">Segurança, precisão e legalidade</div>
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <div class="nav-links" id="navLinks">
+                        <a href="#inicio" data-section="inicio"><span>Início</span></a>
+                        <a href="#armas-curtas" data-section="armas-curtas"><span>Armas</span></a>
+                        <a href="#municoes" data-section="municoes"><span>Munições</span></a>
+                        <a href="#acessorios" data-section="acessorios"><span>Acessórios</span></a>
+                        <a href="#equipamentos-taticos" data-section="equipamentos-taticos"><span>Equipamentos
+                                Táticos</span></a>
+                        <a href="#defesa-pessoal" data-section="defesa-pessoal"><span>Defesa Pessoal</span></a>
+                        <a href="#contato" data-section="contato"><span>Contato</span></a>
+                    </div>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-wrapper">
+                        <input id="searchInput" class="search-input" type="text" placeholder="Buscar produto..." />
+                        <button class="icon-btn" id="searchBtn" aria-label="Buscar produtos">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </div>
+
+
+                    <button class="icon-btn" id="loginBtn" aria-label="Área do cliente">
+                        <i class="ri-user-3-line"></i>
+                    </button>
+
+
+                    <button class="icon-btn cart-icon" id="cartBtn" aria-label="Carrinho">
+                        <i class="ri-shopping-cart-line"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+
+                    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section id="inicio" class="hero">
+                <div class="container hero-inner">
+                    <div class="hero-content reveal">
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot"></span>
+                            Loja 100% regularizada • Brasil
+                        </div>
+                        <h1 class="hero-title">
+                            Excelência, precisão e <span>confiança</span>.
+                        </h1>
+                        <p class="hero-subtitle">
+                            Especializada em armas de fogo, munições e equipamentos táticos para uso autorizado,
+                            com atendimento consultivo, responsável e em total conformidade com a legislação brasileira.
+                        </p>
+
+                        <div class="hero-highlights">
+                            <div class="hero-highlight">
+                                <strong>Catálogo completo</strong>
+                                Armas curtas, longas, munições, acessórios táticos e soluções em defesa pessoal
+                                autorizada.
+                            </div>
+                            <div class="hero-highlight">
+                                <strong>Atendimento especializado</strong>
+                                Instrutores credenciados e consultores para orientar a escolha ideal para cada perfil.
+                            </div>
+                            <div class="hero-highlight">
+                                <strong>Legalidade e segurança</strong>
+                                Processos alinhados às normas do Exército Brasileiro, PF e demais órgãos reguladores.
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" id="ctaCatalogo">
+                                Ver catálogo completo
+                                <span>↓</span>
+                            </button>
+                            <button class="btn btn-outline btn-sm" id="ctaWhatsAppHero">
+                                Falar com especialista no WhatsApp
+                            </button>
+                        </div>
+
+                        <div class="hero-meta">
+                            <span><span class="hero-meta-bullet"></span> Venda exclusiva para pessoas autorizadas</span>
+                            <span><span class="hero-meta-bullet"></span> Retirada presencial conforme legislação</span>
+                            <span><span class="hero-meta-bullet"></span> Suporte em todo o processo documental</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-media reveal">
+                        <div class="hero-card">
+                            <div class="hero-tag">Linha destaque</div>
+                            <div class="hero-weapon-name">Pistola 9mm Plataforma Elite</div>
+                            <div class="hero-weapon-specs">
+                                <span>● Calibre 9×19mm</span>
+                                <span>● Ação semiautomática</span>
+                                <span>● Capacidade 17+1</span>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="hero-stat">
+                                    <span>⬤</span>
+                                    <div>
+                                        <strong>Uso controlado</strong>
+                                        <div>Venda restrita a autorizados</div>
+                                    </div>
+                                </div>
+                                <div class="hero-stat">
+                                    <span>✅</span>
+                                    <div>
+                                        <strong>Testes balísticos</strong>
+                                        <div>Protocolos rigorosos de qualidade</div>
+                                    </div>
+                                </div>
+                                <div class="hero-stat">
+                                    <span>🛡️</span>
+                                    <div>
+                                        <strong>Garantia estendida</strong>
+                                        <div>Assistência técnica especializada</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hero-ribbon">Linha Premium</div>
+                            <div class="hero-security">
+                                <span></span>
+                                Operação certificada • CR / CNPJ (placeholder)
+                            </div>
+
+                            <div class="hero-weapon-visual" aria-hidden="true">
+                                <div class="hero-weapon-shape">
+                                    <div class="hero-weapon-line"></div>
+                                    <div class="hero-weapon-body"></div>
+                                    <div class="hero-weapon-barrel"></div>
+                                    <div class="hero-weapon-grip"></div>
+                                    <div class="hero-weapon-beam"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="categorias">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Catálogo por categoria</div>
+                            <div class="section-subtitle">
+                                Explore nossa seleção organizada por tipo de produto.
+                                Clique na categoria desejada para ver o catálogo completo.
+                            </div>
+                        </div>
+                        <div class="badge-soft">Institucional e comercial • 100% legal</div>
+                    </div>
+
+                    <div class="category-grid reveal">
+                        <!-- Armas curtas -->
+                        <article class="category-card" data-target="#armas-curtas">
+                            <div class="category-icon">
+                                <!-- antes: <i class="ri-gun-line"></i> -->
+                                <i class="ri-crosshair-2-line"></i>
+                            </div>
+                            <div class="category-name">Armas curtas</div>
+                            <div class="category-desc">
+                                Pistolas e revólveres para defesa e uso esportivo autorizado,
+                                com calibres e plataformas variadas.
+                            </div>
+                            <div class="category-link">Ver armas curtas →</div>
+                        </article>
+
+
+                        <!-- Armas longas -->
+                        <article class="category-card" data-target="#armas-longas">
+                            <div class="category-icon">
+                                <i class="ri-crosshair-line"></i>
+                            </div>
+                            <div class="category-name">Armas longas</div>
+                            <div class="category-desc">
+                                Carabinas, espingardas e rifles para tiro esportivo, caça regulamentada
+                                e uso profissional autorizado.
+                            </div>
+                            <div class="category-link">Ver armas longas →</div>
+                        </article>
+
+                        <!-- Munições -->
+                        <article class="category-card" data-target="#municoes">
+                            <div class="category-icon">
+                                <i class="ri-box-3-line"></i>
+                            </div>
+                            <div class="category-name">Munições</div>
+                            <div class="category-desc">
+                                Linhas de munição selecionadas por calibre, finalidade, performance
+                                e padrões de segurança.
+                            </div>
+                            <div class="category-link">Ver munições →</div>
+                        </article>
+
+                        <!-- Acessórios -->
+                        <article class="category-card" data-target="#acessorios">
+                            <div class="category-icon">
+                                <i class="ri-settings-3-line"></i>
+                            </div>
+                            <div class="category-name">Acessórios</div>
+                            <div class="category-desc">
+                                Coldres, cases, miras, lanternas, bandoleiras e outros itens
+                                para otimizar seu equipamento.
+                            </div>
+                            <div class="category-link">Ver acessórios →</div>
+                        </article>
+
+                        <!-- Equipamentos táticos -->
+                        <article class="category-card" data-target="#equipamentos-taticos">
+                            <div class="category-icon">
+                                <i class="ri-medal-line"></i>
+                            </div>
+                            <div class="category-name">Equipamentos táticos</div>
+                            <div class="category-desc">
+                                Coletes, mochilas, cintos, luvas, óculos e equipamentos para
+                                operações e treinamentos.
+                            </div>
+                            <div class="category-link">Ver equipamentos táticos →</div>
+                        </article>
+
+                        <!-- Defesa pessoal -->
+                        <article class="category-card" data-target="#defesa-pessoal">
+                            <div class="category-icon">
+                                <i class="ri-shield-line"></i>
+                            </div>
+                            <div class="category-name">Defesa pessoal autorizada</div>
+                            <div class="category-desc">
+                                Itens de defesa não letal e recursos complementares, conforme
+                                regulamentação e disponibilidade.
+                            </div>
+                            <div class="category-link">Ver linha de defesa pessoal →</div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="armas-curtas" class="category-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Armas curtas</div>
+                            <div class="section-subtitle">
+                                Seleção de pistolas e revólveres para clientes devidamente autorizados, com foco em
+                                confiabilidade, ergonomia e precisão.
+                            </div>
+                        </div>
+                        <div class="badge-soft">Venda restrita • Uso controlado</div>
+                    </div>
+
+                    <div class="products-grid" data-category="armas-curtas"></div>
+                </div>
+            </section>
+
+            <section id="armas-longas" class="category-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Armas longas</div>
+                            <div class="section-subtitle">
+                                Carabinas, espingardas e rifles de diferentes plataformas e calibres, para tiro
+                                esportivo, caça regulamentada e uso profissional.
+                            </div>
+                        </div>
+                        <div class="badge-soft">Uso controlado • Documentação obrigatória</div>
+                    </div>
+
+                    <div class="products-grid" data-category="armas-longas"></div>
+                </div>
+            </section>
+
+            <section id="municoes" class="category-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Munições</div>
+                            <div class="section-subtitle">
+                                Linhas de munição selecionadas para diferentes aplicações: treinamento, defesa,
+                                competição e uso operacional.
+                            </div>
+                        </div>
+                        <div class="badge-soft">Venda vinculada a arma registrada</div>
+                    </div>
+
+                    <div class="products-grid" data-category="municoes"></div>
+                </div>
+            </section>
+
+            <section id="acessorios" class="category-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Acessórios</div>
+                            <div class="section-subtitle">
+                                Soluções para transporte, manutenção, personalização e otimização do seu armamento e
+                                setup tático.
+                            </div>
+                        </div>
+                        <div class="badge-soft">Itens complementares • Linha ampliada</div>
+                    </div>
+
+                    <div class="products-grid" data-category="acessorios"></div>
+                </div>
+            </section>
+
+            <section id="equipamentos-taticos" class="category-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Equipamentos táticos</div>
+                            <div class="section-subtitle">
+                                Equipamentos de apoio para operações, treinamentos e atividades profissionais, com foco
+                                em durabilidade e performance.
+                            </div>
+                        </div>
+                        <div class="badge-soft">Linha profissional</div>
+                    </div>
+
+                    <div class="products-grid" data-category="equipamentos-taticos"></div>
+                </div>
+            </section>
+
+            <section id="defesa-pessoal" class="category-section">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Defesa pessoal autorizada</div>
+                            <div class="section-subtitle">
+                                Recursos para defesa pessoal dentro da legislação vigente, com foco em prevenção,
+                                dissuasão e responsabilidade.
+                            </div>
+                        </div>
+                        <div class="badge-soft">Uso responsável • Orientação técnica</div>
+                    </div>
+
+                    <div class="products-grid" data-category="defesa-pessoal"></div>
+                </div>
+            </section>
+
+            <section id="diferenciais">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Por que escolher a Armory Elite?</div>
+                            <div class="section-subtitle">
+                                Mais do que vender produtos, entregamos consultoria, segurança jurídica e parceria de
+                                longo prazo com cada cliente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="differentials-grid reveal">
+                        <article class="diff-card">
+                            <div class="diff-icon"></div>
+                            <div class="diff-title">Empresa 100% regularizada</div>
+                            <div class="diff-text">
+                                Operação estruturada com CR, registros e autorizações válidas, seguindo rigorosamente a
+                                legislação vigente.
+                            </div>
+                        </article>
+
+                        <article class="diff-card">
+                            <div class="diff-icon"></div>
+                            <div class="diff-title">Instrutores credenciados</div>
+                            <div class="diff-text">
+                                Treinamentos, testes de aptidão e orientações conduzidas por instrutores certificados e
+                                experientes.
+                            </div>
+                        </article>
+
+                        <article class="diff-card">
+                            <div class="diff-icon"></div>
+                            <div class="diff-title">Certificados e regulamentações</div>
+                            <div class="diff-text">
+                                Processos alinhados às exigências do Exército, Polícia Federal e demais órgãos
+                                responsáveis.
+                            </div>
+                        </article>
+
+                        <article class="diff-card">
+                            <div class="diff-icon"></div>
+                            <div class="diff-title">Suporte especializado</div>
+                            <div class="diff-text">
+                                Atendimento consultivo em todas as etapas: escolha do equipamento, documentação e
+                                pós-venda.
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contato">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Contato e atendimento</div>
+                            <div class="section-subtitle">
+                                Tire dúvidas, solicite orçamentos ou agende um atendimento com nossa equipe
+                                especializada.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-layout">
+                        <div class="card reveal">
+                            <h3 style="margin-top:0;font-size:0.98rem;">Fale conosco</h3>
+
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label class="form-label" for="contatoNome">Nome completo</label>
+                                    <input class="form-input" id="contatoNome" type="text" placeholder="Digite seu nome"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="contatoEmail">E-mail</label>
+                                    <input class="form-input" id="contatoEmail" type="email"
+                                        placeholder="seuemail@exemplo.com" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="contatoTelefone">Telefone / WhatsApp</label>
+                                    <input class="form-input" id="contatoTelefone" type="tel"
+                                        placeholder="(00) 00000-0000" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="contatoMensagem">Mensagem</label>
+                                    <textarea class="form-textarea" id="contatoMensagem"
+                                        placeholder="Descreva sua necessidade, dúvida ou interesse."></textarea>
+                                </div>
+
+                                <div class="contact-actions">
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                        Enviar mensagem
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline btn-sm" id="contactWhatsApp">
+                                        Atalho WhatsApp
+                                    </button>
+                                </div>
+
+                                <p class="note">
+                                    Ao enviar o formulário, será aberta uma conversa no WhatsApp com nossa equipe,
+                                    já com seus dados preenchidos.
+                                </p>
+
+                            </form>
+                        </div>
+
+                        <div class="card reveal">
+                            <h3 style="margin-top:0;font-size:0.98rem;">Informações da loja</h3>
+                            <div class="contact-meta">
+                                <div><strong>Endereço:</strong> Rua Abobrinha, 777, Bairro Centro – Aparecida do
+                                    Taboado/MS</div>
+                                <div><strong>Telefone fixo:</strong> (67) 98421-3698</div>
+                                <div><strong>WhatsApp comercial:</strong> (67) 98421-3698</div>
+                                <div><strong>Horário de funcionamento:</strong><br />
+                                    Segunda a sexta: 08h às 18h<br />
+                                    Sábado: 09h às 12h
+                                </div>
+                            </div>
+
+                            <div class="map-placeholder">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.482284133777!2d-51.08735598875285!3d-20.07211654267271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949996cff6819389%3A0x9777806779f5593a!2sAlameda%20Ac%C3%A1cia%2C%20Aparecida%20do%20Taboado%20-%20MS%2C%2079570-000!5e0!3m2!1spt-BR!2sbr!4v1763326460968!5m2!1spt-BR!2sbr"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/hyan.vfn" target="_blank" class="social-link"
+                                    aria-label="Instagram">
+                                    <i class="ri-instagram-line"></i><span>Instagram</span>
+                                </a>
+                                <a href="https://youtu.be/dQw4w9WgXcQ?si=uSgPedyN8lZKEs-0" target="_blank" class="social-link" aria-label="YouTube">
+                                    <i class="ri-youtube-line"></i><span>YouTube</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="conformidade-legal">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Conformidade legal e regras de compra</div>
+                            <div class="section-subtitle">
+                                Todas as operações são conduzidas em estrito alinhamento com a legislação brasileira,
+                                respeitando normas, prazos e exigências documentais.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="legal-layout">
+                        <div class="card reveal">
+                            <h3 style="margin-top:0;font-size:0.96rem;">Regras gerais de compra</h3>
+                            <ul class="legal-list">
+                                <li>Venda de armas de fogo e munições apenas para pessoas e entidades devidamente
+                                    autorizadas.</li>
+                                <li>Necessidade de apresentação e validação da documentação exigida pelos órgãos
+                                    competentes.</li>
+                                <li>Armas de fogo somente com retirada presencial, mediante conferência documental e
+                                    procedimentos internos de segurança.</li>
+                                <li>Munições disponibilizadas em quantidades e calibres compatíveis com os registros
+                                    apresentados.</li>
+                                <li>Negócios condicionados à aprovação dos órgãos reguladores e ao cumprimento integral
+                                    da legislação vigente.</li>
+                            </ul>
+
+                            <div class="legal-note">
+                                Venda apenas para pessoas autorizadas conforme legislação brasileira. O uso responsável
+                                e dentro da lei é condição essencial
+                                para qualquer operação.
+                            </div>
+                        </div>
+
+                        <div class="card reveal legal-side">
+                            <h3 style="margin-top:0;font-size:0.96rem;">Documentos e registros (placeholders)</h3>
+                            <p>
+                                A lista abaixo é meramente ilustrativa. Consulte sempre a legislação vigente, seu
+                                advogado ou o órgão regulador responsável
+                                para confirmação dos requisitos oficiais.
+                            </p>
+                            <ul class="legal-docs">
+                                <li>CR – Certificado de Registro (pessoa física ou jurídica, conforme o caso).</li>
+                                <li>CRAF – Certificado de Registro de Arma de Fogo.</li>
+                                <li>Documentos vinculados a CAC, forças de segurança ou instituições autorizadas.</li>
+                                <li>Comprovantes de residência, identificação pessoal e demais documentos exigidos.</li>
+                                <li>Comprovação de aptidão psicológica e capacidade técnica, quando aplicável.</li>
+                            </ul>
+
+                            <p style="margin-top:0.6rem;">
+                                Todas as orientações prestadas pela loja têm caráter informativo e não substituem a
+                                consulta às normas oficiais e aos
+                                órgãos competentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="carrinho">
+                <div class="container">
+                    <div class="section-header">
+                        <div>
+                            <div class="section-title">Carrinho e finalização de pedido</div>
+                            <div class="section-subtitle">
+                                Monte seu pedido, preencha os dados cadastrais e finalize o contato via WhatsApp. A
+                                conclusão da compra está sempre condicionada
+                                à apresentação e validação da documentação exigida por lei.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-layout">
+                        <div class="card reveal">
+                            <h3 style="margin-top:0;font-size:0.96rem;">Itens selecionados</h3>
+                            <div id="cartEmpty" class="cart-empty">
+                                Nenhum item no carrinho. Adicione produtos pelo catálogo para iniciar o pedido.
+                            </div>
+
+                            <div id="cartTableWrapper" style="display:none;overflow-x:auto;">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Produto</th>
+                                            <th>Categoria</th>
+                                            <th>Qtd.</th>
+                                            <th>Preço</th>
+                                            <th>Subtotal</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cartItems"></tbody>
+                                </table>
+
+                                <div class="cart-summary">
+                                    <div>
+                                        <strong id="cartTotal">Total: R$ 0,00</strong>
+                                        <small>Valores e disponibilidade sujeitos à confirmação.</small>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-sm" id="clearCartBtn">
+                                        Esvaziar carrinho
+                                    </button>
+                                </div>
+                                <p class="note">
+                                    Os valores exibidos são ilustrativos, não configuram proposta comercial formal e
+                                    podem ser ajustados conforme negociação,
+                                    disponibilidade e legislação vigente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card reveal">
+                            <h3 style="margin-top:0;font-size:0.96rem;">Dados para contato e pré-cadastro</h3>
+
+                            <form id="checkoutForm">
+                                <div class="form-group">
+                                    <label class="form-label" for="clienteNome">Nome completo *</label>
+                                    <input class="form-input" id="clienteNome" type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="clienteCPF">CPF *</label>
+                                    <input class="form-input" id="clienteCPF" type="text" placeholder="000.000.000-00"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="clienteEmail">E-mail *</label>
+                                    <input class="form-input" id="clienteEmail" type="email" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="clienteTelefone">Telefone / WhatsApp *</label>
+                                    <input class="form-input" id="clienteTelefone" type="tel" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="clienteCidadeUF">Cidade / UF *</label>
+                                    <input class="form-input" id="clienteCidadeUF" type="text" placeholder="Cidade / UF"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="clienteCR">Número de CR (se aplicável)</label>
+                                    <input class="form-input" id="clienteCR" type="text"
+                                        placeholder="Informe seu CR, se possuir (opcional)" />
+                                </div>
+
+                                <p class="note">
+                                    O envio de dados por este formulário tem caráter pré-cadastral para organização do
+                                    atendimento. A validação oficial
+                                    será feita diretamente com a equipe, mediante apresentação de documentos.
+                                </p>
+
+                                <button type="button" class="btn btn-primary" id="finalizarWhatsApp">
+                                    Finalizar pedido via WhatsApp
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>
+                    <div class="footer-logo">
+                        <img src="fotos/logo.png" alt="JR" class="footer-logo-img">
+                        <div>
+                            <strong>Armory Elite</strong>
+                            <div style="font-size:0.78rem;color:#b0b0b0;">
+                                Armas, munições e equipamentos táticos para clientes autorizados.
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:0.78rem;color:#999;">
+                        Venda autorizada conforme legislação vigente. Este layout é ilustrativo e deve ser adaptado com
+                        dados reais da empresa,
+                        registros e contatos oficiais.
+                    </div>
+                </div>
+
+                <div>
+                    <div style="font-weight:600;margin-bottom:0.4rem;font-size:0.82rem;">Links rápidos</div>
+                    <div class="footer-links">
+                        <a href="#inicio">Início</a>
+                        <a href="#armas-curtas">Armas</a>
+                        <a href="#municoes">Munições</a>
+                        <a href="#acessorios">Acessórios</a>
+                        <a href="#equipamentos-taticos">Equipamentos táticos</a>
+                        <a href="#defesa-pessoal">Defesa pessoal</a>
+                        <a href="#sobre">Sobre nós</a>
+                        <a href="#contato">Contato</a>
+                        <a href="#conformidade-legal">Política de conformidade</a>
+                        <a href="#carrinho">Carrinho</a>
+                    </div>
+                </div>
+
+                <div class="footer-legal">
+                    <strong>CR / Registro da empresa:</strong>
+                    <span>27.734.310/0001-96</span>
+                    <br />
+                    © <span id="year"></span> Armory Elite. Todos os direitos reservados.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="cartToast" class="cart-toast"></div>
+
+    <div id="goToCartBtn" class="go-to-cart-btn">Ir para carrinho</div>
+
+</body>
+
+</html>

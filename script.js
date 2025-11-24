@@ -397,7 +397,6 @@ function generateProducts() {
   </div>
 `;
 
-
         grid.appendChild(card);
     });
 }

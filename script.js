@@ -160,7 +160,7 @@ const products = [
     // Defesa pessoal autorizada
     {
         id: "dp-spray",
-        name: "Spray de defesa (placeholder)",
+        name: "Spray de defesa",
         category: "defesa-pessoal",
         shortCategory: "Defesa pessoal",
         description: "Recurso de defesa pessoal não letal, sujeito à disponibilidade e regulamentação.",
